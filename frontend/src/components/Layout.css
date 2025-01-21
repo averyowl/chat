@@ -1,0 +1,58 @@
+/* Layout.css */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1e1e2e; /* ✅ Catppuccin base background */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #181825; /* ✅ Catppuccin sidebar surface */
+  color: #cdd6f4; /* ✅ Soft text color */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #1e1e2e; /* ✅ Catppuccin base background */
+  color: #cdd6f4; /* ✅ Text color */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Sidebar Hover Effect */
+.sidebar .room-item:hover {
+  background-color: #313244; /* ✅ Catppuccin overlay for hover */
+  color: #cdd6f4;
+  cursor: pointer;
+}
+
+/* Profile Dropdown */
+.profile-dropdown .dropdown-menu {
+  background-color: #181825; /* ✅ Dropdown background */
+  border: 1px solid #313244;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-dropdown .dropdown-menu a,
+.profile-dropdown .dropdown-menu button {
+  color: #cdd6f4;
+}
+
+.profile-dropdown .dropdown-menu a:hover,
+.profile-dropdown .dropdown-menu button:hover {
+  background-color: #313244; /* ✅ Subtle hover effect */
+}
+

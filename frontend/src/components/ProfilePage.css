@@ -1,0 +1,63 @@
+/* Ensure the profile page respects the sidebar width */
+.profile-container {
+    margin-left: 250px; /* Sidebar width */
+    padding: 40px;
+    background-color: #1e1e2e; /* base */
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    color: #cdd6f4; /* text */
+}
+
+.profile-container h2, 
+.profile-container h3 {
+    margin-bottom: 20px;
+    color: #b4befe; /* lavender */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cdd6f4; /* text */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #45475a; /* surface0 */
+    border-radius: 5px;
+    background-color: #313244; /* mantle */
+    color: #cdd6f4; /* text */
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #b4befe; /* lavender */
+    box-shadow: 0 0 5px #b4befe;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #89b4fa; /* blue */
+    color: #1e1e2e; /* base */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #74c7ec; /* sky */
+}
+
+.update-message {
+    margin-top: 20px;
+    color: #a6e3a1; /* green */
+    font-weight: bold;
+}
+

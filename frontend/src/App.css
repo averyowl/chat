@@ -1,0 +1,210 @@
+/* Base styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #1e1e2e; /* base */
+  color: #cdd6f4; /* text */
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #313244; /* mantle */
+  color: #cdd6f4; /* text */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rooms-section h2 {
+  margin: 0 0 10px 0;
+  color: #f5c2e7; /* pink */
+}
+
+.rooms-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rooms-section li {
+  margin-bottom: 0px;
+}
+
+.rooms-section li a {
+  color: #cdd6f4; /* text */
+  text-decoration: none;
+}
+
+.rooms-section li a:hover {
+  color: #b4befe; /* lavender */
+}
+
+.sidebar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-room-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #45475a; /* surface0 */
+  border: none;
+  color: #cdd6f4; /* text */
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-room-btn:hover {
+  background-color: #585b70; /* surface1 */
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-button {
+  width: 40px;
+  height: 40px;
+  background-color: #f38ba8; /* red */
+  border: none;
+  color: #1e1e2e; /* base */
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-button:hover {
+  background-color: #f38ba8; /* red */
+}
+
+.dropdown-menu {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background-color: #313244; /* mantle */
+  color: #cdd6f4; /* text */
+  border: 1px solid #45475a; /* surface0 */
+  border-radius: 5px;
+  min-width: 120px;
+  padding: 10px;
+  z-index: 99;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #45475a; /* surface0 */
+}
+
+/* LOGOUT BUTTON */
+.logout-container {
+  flex: 0 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f38ba8; /* red */
+  border: none;
+  color: #1e1e2e; /* base */
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #f38ba8; /* red */
+}
+
+/* MAIN APP LAYOUT */
+
+/* CHAT AREA */
+.chat-content {
+  margin-left: 250px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px;
+}
+
+/* CHAT WINDOW */
+.chat-window {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  background-color: #1e1e2e; /* base */
+  padding: 10px 20px;
+  border: 1px solid #45475a; /* surface0 */
+  margin: 20px;
+  border-radius: 5px;
+}
+
+
+/* CHAT INPUT BAR */
+.chat-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  right: 0;
+  background-color: #313244; /* mantle */
+  border-top: 1px solid #45475a; /* surface0 */
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.chat-input-container input {
+  flex: 1 1 auto;
+  padding: 10px;
+  border: 1px solid #45475a; /* surface0 */
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: #1e1e2e; /* base */
+  color: #cdd6f4; /* text */
+}
+
+.send-button {
+  width: 50px;
+  background-color: #89b4fa; /* blue */
+  color: #1e1e2e; /* base */
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover {
+  background-color: #74c7ec; /* sky */
+}
+

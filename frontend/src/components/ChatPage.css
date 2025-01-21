@@ -1,0 +1,62 @@
+/* Message container */
+.message-item {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #313244;
+    color: #cdd6f4;
+    
+}
+
+/* Style for system messages */
+.system-message {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin: 10px 0;
+}
+
+
+/* Dropdown menu */
+.message-menu {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    background-color: #181825;
+    border: 1px solid #313244;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+/* Ellipsis hidden by default */
+.ellipsis-btn {
+    background: transparent;
+    border: none;
+    color: #cdd6f4;
+    cursor: pointer;
+    font-size: 16px;
+    visibility: hidden;  /* ✅ Hidden initially */
+}
+
+/* Show ellipsis on hover */
+.message-item:hover .ellipsis-btn {
+    visibility: visible;  /* ✅ Show on hover */
+}
+
+.message-menu button {
+    background: none;
+    border: none;
+    color: #cdd6f4;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.message-menu button:hover {
+    background-color: #45475a;
+}
+
