@@ -69,6 +69,14 @@ This will start both the backend and frontend concurrently.
 - Check the backend by visiting `http://localhost:5000`.
 - Ensure MongoDB is running and connected properly.
 
+## Testing
+
+The backend has a testing framework set up:
+```sh
+cd backend
+npm test
+```
+
 ## Troubleshooting
 
 ### MongoDB Connection Issues
