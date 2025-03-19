@@ -13,8 +13,10 @@
   "type": "commonjs",
   "description": "",
   "jest": {
-      "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"],
-      "testEnvironment": "node"
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "testEnvironment": "node"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -28,9 +30,7 @@
     "mongoose": "^8.9.5",
     "nodemon": "^3.1.9",
     "socket.io": "^4.8.1",
-    "socket.io-client": "^4.8.1"
-  },
-  "devDependencies": {
+    "socket.io-client": "^4.8.1",
     "supertest": "^7.0.0"
   }
 }
