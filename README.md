@@ -1,3 +1,10 @@
+# Please note
+
+This project was made in collaboration with someone who left two weeks before the deadline.
+All features work, but the frontend lacks the polish it could've had.
+The backend is feature complete, I have not had the time to complete and test the frontend.
+Because the two are tightly coupled, I couldn't switch to the provided frontend.
+
 # Project Setup Guide
 
 ## Prerequisites
